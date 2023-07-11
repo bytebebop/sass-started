@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.my-auto {
+  margin-block: auto;
+}
+
+@each $name, $value in $spaces {
+  .m {
+    &-#{$name} {
+      margin: $value;
+    }
+
+    &l-#{$name} {
+      margin-inline-start: $value;
+    }
+
+    &r-#{$name} {
+      margin-inline-end: $value;
+    }
+
+    &x-#{$name} {
+      margin-inline: $value;
+    }
+
+    &t-#{$name} {
+      margin-block-start: $value;
+    }
+
+    &b-#{$name} {
+      margin-block-end: $value;
+    }
+
+    &y-#{$name} {
+      margin-block: $value;
+    }
+  }
+}

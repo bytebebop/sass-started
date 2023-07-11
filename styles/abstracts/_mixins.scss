@@ -1,0 +1,24 @@
+@use "sass:meta";
+@use "sass:math";
+@use "sass:map";
+
+@use "breakpoints" as *;
+
+@mixin mq($size) {
+  @if (map.has-key($breakpoints, $size)) {
+    $breakpoint: map.get($breakpoints, $size);
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  } @else if (meta.type-of($size) == number) {
+    @if (math.is-unitless($size)) {
+      @error "You need to add a measure (px, rem ...)";
+    } @else {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  } @else {
+    @error "$size does not exist in your breakpoints";
+  }
+}
