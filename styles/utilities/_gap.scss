@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+@each $gap-name, $gap-value in $spaces {
+  .gap {
+    &-#{$gap-name} {
+      gap: $gap-value;
+    }
+
+    &-x-#{$gap-name} {
+      column-gap: $gap-value;
+    }
+
+    &-y-#{$gap-name} {
+      row-gap: $gap-value;
+    }
+  }
+}

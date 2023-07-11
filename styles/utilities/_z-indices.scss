@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+@each $value in $z-indices {
+  .z-#{$value} {
+    z-index: $value;
+  }
+}

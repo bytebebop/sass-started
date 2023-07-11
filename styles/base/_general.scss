@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+body {
+  font-family: $ff-sans;
+  transition: 0.3s;
+}

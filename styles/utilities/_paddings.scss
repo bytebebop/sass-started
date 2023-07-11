@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.px-auto {
+  padding-inline: auto;
+}
+
+.py-auto {
+  padding-block: auto;
+}
+
+@each $name, $value in $spaces {
+  .p {
+    &-#{$name} {
+      padding: $value;
+    }
+
+    &l-#{$name} {
+      padding-inline-start: $value;
+    }
+
+    &r-#{$name} {
+      padding-inline-end: $value;
+    }
+
+    &x-#{$name} {
+      padding-inline: $value;
+    }
+
+    &t-#{$name} {
+      padding-block-start: $value;
+    }
+
+    &b-#{$name} {
+      padding-block-end: $value;
+    }
+
+    &y-#{$name} {
+      padding-block: $value;
+    }
+  }
+}

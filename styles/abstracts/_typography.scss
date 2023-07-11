@@ -1,0 +1,38 @@
+$ff-sans: "Lato", sans-serif;
+$ff-serif: "Abril Fatface", serif;
+
+$fs-16: clamp(0.938rem, -0.563rem + 2.08vw, 1rem);
+$fs-18: clamp(1rem, -2rem + 4.17vw, 1.125rem);
+$fs-21: clamp(1.188rem, -1.813rem + 4.17vw, 1.313rem);
+$fs-27: clamp(1.5rem, -3rem + 6.25vw, 1.688rem);
+$fs-60: clamp(2.5rem, -27.5rem + 41.67vw, 3.75rem);
+$fs-80: clamp(2.5rem, -57.5rem + 83.33vw, 5rem);
+
+$font-sizes: (
+  16: $fs-16,
+  18: $fs-18,
+  21: $fs-21,
+  27: $fs-27,
+  60: $fs-60,
+  80: $fs-80,
+);
+
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+$font-weights: (
+  "thin": $thin,
+  "light": $light,
+  "regular": $regular,
+  "medium": $medium,
+  "semi-bold": $semi-bold,
+  "bold": $bold,
+  "extra-bold": $extra-bold,
+  "black": $black,
+);
