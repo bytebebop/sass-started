@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.btn {
+  display: inline-flex;
+  text-decoration: none;
+  line-height: 1;
+  padding: 1.125rem 2rem;
+  font-weight: $fw-bold;
+
+  &-primary {
+    background-color: $clr-black;
+    color: $clr-white;
+
+    &:is(:hover, :focus) {
+      background-color: $clr-black;
+      color: $clr-grey;
+    }
+  }
+
+  &-outline {
+    outline: 5px solid $clr-black;
+    outline-offset: calc(5px * -1);
+    color: $clr-black;
+
+    &:is(:hover, :focus) {
+      background-color: $clr-black;
+      color: $clr-white;
+    }
+  }
+}

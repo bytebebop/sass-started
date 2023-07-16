@@ -1,5 +1,5 @@
-$ff-sans: "Lato", sans-serif;
-$ff-serif: "Abril Fatface", serif;
+$ff-base: sans-serif;
+$ff-accent: serif;
 
 $fs-16: clamp(0.938rem, -0.563rem + 2.08vw, 1rem);
 $fs-18: clamp(1rem, -2rem + 4.17vw, 1.125rem);
@@ -17,22 +17,22 @@ $font-sizes: (
   80: $fs-80,
 );
 
-$thin: 100;
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semi-bold: 600;
-$bold: 700;
-$extra-bold: 800;
-$black: 900;
+$fw-thin: 100;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+$fw-black: 900;
 
 $font-weights: (
-  "thin": $thin,
-  "light": $light,
-  "regular": $regular,
-  "medium": $medium,
-  "semi-bold": $semi-bold,
-  "bold": $bold,
-  "extra-bold": $extra-bold,
-  "black": $black,
+  "thin": $fw-thin,
+  "light": $fw-light,
+  "regular": $fw-regular,
+  "medium": $fw-medium,
+  "semi-bold": $fw-semi-bold,
+  "bold": $fw-bold,
+  "extra-bold": $fw-extra-bold,
+  "black": $fw-black,
 );

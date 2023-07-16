@@ -3,5 +3,9 @@
 @each $fs-name, $fs-value in $font-sizes {
   .fs-#{$fs-name} {
     font-size: $fs-value;
+
+    @if ($fs-name >= 60) {
+      line-height: 1.1;
+    }
   }
 }
